@@ -15,12 +15,13 @@ person.sayHello("Jun");
 // menambahkan method ke object
 
 const orang = {
-    names : "Juna"
+    names : "Juna",
+    alamat : "sukabumi"
 }
 
-orang.hello = function (names){
-    document.writeln(`Hello ${names}`);
+orang.hello = function (alamat){
+    document.writeln(`Hello ${alamat}`);
 }
 
 
-orang.hello("jun")
+orang.hello("jampang");
