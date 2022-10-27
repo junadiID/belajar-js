@@ -39,6 +39,7 @@ piihan.forEach(function(i){
 
         putar();
 
+      
         setTimeout(function(){
             
         // ambil gambar komputer
@@ -47,6 +48,7 @@ piihan.forEach(function(i){
 
         const Tampil = document.querySelector('.info');
         Tampil.innerHTML = hasil;
+               console.info(hasil);
 
         }, 1000);
 

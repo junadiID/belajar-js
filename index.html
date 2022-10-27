@@ -5,46 +5,77 @@
     <meta charset="UTF-8">
     <title>Dom Selection</title>
     <style>
-        /* * {
-            border: 2px solid #dedede;
-            padding: 15px;
-            margin: 15px;
-        }
-
-        html {
-            margin: 0;
-            padding: 0;
-        } */
-
-        html,body {
-            height: 100%;
-        }
         body {
-         text-align: center;
+        margin: 50px;
+        font-family: arial;
+        background-color: #666;
         }
 
-        .warna{
-            background-color: orange;
+        .container {
+        width: 900px;
+        margin: auto;
         }
 
-    
-        .kotak{
-            width:  25px;
-            height: 25px;
-            margin: 10px auto;
-           
+        .card {
+        display: inline-block;
+        width: 220px;
+        padding: 0 80px;
+        height: 80px;
+        font-size: 16px;
+        line-height: 80px;
+        border-radius: 40px;
+        background-color: #f1f1f1;
+        margin: 20px;
+        position: relative;
+        text-align: center;
         }
 
-        .merah{
-             background-color: red;
-        }
-        .hijau{
-            background-color: green;
-        }
-        .biru{
-            background-color: blue;
+        .card img {
+        float: left;
+        margin: 0 10px 0 -80px;
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        position: relative;
         }
 
+        .card .nama, .card .telp {
+        display: block;
+        line-height: 20px;
+        padding: 0 5px;
+        }
+
+        .card .nama {
+        margin-left: 20px;
+        margin-top: 20px;
+        font-size: 20px;
+        }
+
+        .card .telp {
+        margin-left: 20px;
+        margin-top: 5px;
+        font-size: 16px;
+        color: #aaa;
+        }
+
+        .card .close {
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: bold;
+        color: #999;
+        position: absolute;
+        top: 0;
+        right: 30px;
+        cursor: pointer;
+        }
+
+        .card:hover .close {
+        color: red;
+        }
+
+        .hidden{
+        display: none;
+        }
 
     </style>
 </head>
@@ -66,8 +97,46 @@
     <div class="kotak biru"></div>
     <input type="range" name="sBiru" min="0" max="255"> -->
 
+    <div class="container">
 
-    <script src="dom/gameSuwit.js"></script>
+
+    
+        <div class="card">
+            <img src="asset/gajah.png" width="96" height="96">
+            <span class="nama">Junjun</span>
+            <span class="telp">08123456789</span>
+            <span class="close">×</span>
+        </div>
+
+        <div class="card">
+            <img src="asset/orang.png" width="96" height="96">
+            <span class="nama">Junaedi</span>
+            <span class="telp">08123456789</span>
+            <span class="close">×</span>
+        </div>
+
+        <div class="card">
+            <img src="asset/semut.png" width="96" height="96">
+            <span class="nama">Kamal</span>
+            <span class="telp">08123456789</span>
+            <span class="close">×</span>
+        </div>
+
+        <div class="card">
+            <img src="asset/gajah.png" width="96" height="96">
+            <span class="nama">Kamal</span>
+            <span class="telp">08123456789</span>
+            <span class="close">×</span>
+        </div>
+    
+
+
+
+
+
+    </div>
+
+    <script src="dom/eventBuilding.js"></script>
 </body>
 
 </html>

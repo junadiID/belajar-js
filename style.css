@@ -113,6 +113,36 @@ h1 {
     text-shadow: 1px 1px 1px rgba(0,0,0,.3);
 }
 
+.scoreKomputer{
+    width: 56px;
+    height: 43px;
+    border-radius: 10px;
+    border: 2px solid rgb(212, 3, 55);
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    top: 30px;
+    left: 10px;
+    color: red;
+    text-align: center;
+    line-height: 43px;
+    font-size: 20px;
+}
+
+.scorePlayer{
+    width: 56px;
+    height: 43px;
+    border-radius: 10px;
+    border: 2px solid rgb(212, 3, 55);
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    top: 30px;
+    left: 10px;
+    color: red;
+    text-align: center;
+    line-height: 43px;
+    font-size: 20px;
+}
+
 ul {
     padding-top: 80px;
     padding-left: 25px;
