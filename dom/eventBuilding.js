@@ -17,6 +17,10 @@
 //     });
 // });
 
+// preventDefault(  ) ~ menghentikan sifat default element
+
+// stopPropagation(  ) ~ menghilangkan event bubbling pada element 
+
 
 const container = document.querySelector('.container');
 container.addEventListener('click', function(e){
@@ -26,3 +30,4 @@ container.addEventListener('click', function(e){
         console.info(e.target);
     }
 });
+
